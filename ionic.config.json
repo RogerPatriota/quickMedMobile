@@ -1,0 +1,7 @@
+{
+  "name": "quickMed",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
