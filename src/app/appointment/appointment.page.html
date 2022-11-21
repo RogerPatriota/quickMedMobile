@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>QuickMed</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <div class="hospitais">
+    <ion-list *ngFor="let hospital of hospitais" class="lista-hosp">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{hospital.nome}}</ion-card-title>
+          <ion-card-subtitle><p>Especialide:</p>{{hospital.especialidade}}</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <p>Endereço:</p>{{hospital.endereco}}
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+
+  </div>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button tab="schedule" class="tab" routerLink="/home">
+        <ion-icon name="home-outline" class="icon-tab"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="appointment" class="tab" routerLink="/home/appointment">
+        <ion-icon name="bandage-outline" class="icon-tab"></ion-icon>
+        <ion-label>Consultas</ion-label>
+      </ion-tab-button>
+
+
+      <ion-tab-button tab="scaner" class="tab-camera" routerLink="/home/scaner">
+        <ion-icon name="camera-outline" id="camera"></ion-icon>
+        <ion-label>Scanear</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="about" class="tab" routerLink="/home/about">
+        <ion-icon name="alert-circle-outline"></ion-icon>
+        <ion-label>Sobre nos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="profile" class="tab" routerLink="/home/profile">
+        <ion-icon name="person-outline" class="icon-tab"></ion-icon>
+        <ion-label>Perfil</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>

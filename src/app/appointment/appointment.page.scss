@@ -1,0 +1,58 @@
+ion-header {
+    background-color: orange;
+  }
+  
+  ion-toolbar {
+    --background: none;
+    --border-width: 0px !important;
+    background-color: orange !important;
+    height: 70px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  ion-title {
+    position: relative;
+    font-size: 35px;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  
+  ion-content {
+    --background: rgb(244, 242, 242);
+  }
+
+  .lista-hosp {
+    background-color: orange;
+  }
+
+  ion-card-header {
+    margin: 0px 10px;
+  }
+
+  ion-card-content {
+    margin: 0px 10px;
+    padding-top: 20px;
+    border-top: 1px solid orange;
+  }
+
+  ion-tab-bar {
+    background-color: orange;
+    font-size: 25px;
+  }
+  
+  .tab {
+    background-color: orange;
+    color: white;
+  }
+  
+  .tab-camera {
+    border-radius: 15px;
+  }
+  
+  
+  #camera {
+    color: orange;
+    border-radius: 10px;
+  }

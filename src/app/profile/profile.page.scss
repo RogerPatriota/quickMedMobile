@@ -1,0 +1,90 @@
+ion-header {
+  background-color: rgb(244, 242, 242);
+}
+  
+ion-toolbar {
+  --background: none;
+  background-color: orange !important;
+  height: 70px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+ion-title {
+  position: relative;
+  font-size: 35px;
+  color: white;
+  margin-top: 10px;
+}
+
+.input {
+  margin-top: 15px;
+  --background: rgb(244, 242, 242);
+}
+
+.input > ion-label {
+  font-size: 20px;
+  color: orange;
+}
+
+ion-content {
+  --background: rgb(244, 242, 242);
+}
+
+.user {
+  margin-top: 35px;
+  font-size: 25px;
+}
+
+.user-info {
+  margin: 10px 0px;
+  font-size: 20px;
+  border-bottom: 1px solid orange;
+}
+
+
+ion-button {
+  margin-top: 15px;
+  width: 195px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: orange;
+}
+
+.consultas {
+  width: 100%;
+  margin-top: 35px;
+}
+
+#consulta-info {
+  width: 100%;
+  --background: rgb(244, 242, 242);
+}
+
+#info {
+  display: block;
+  padding: 8px;
+  border-bottom: 2px solid orange;
+  border-top: 2px solid orange;
+}
+
+ion-tab-bar {
+  background-color: orange;
+  font-size: 25px;
+}
+
+.tab {
+  background-color: orange;
+  color: white;
+}
+
+.tab-camera {
+  border-radius: 15px;
+}
+
+
+#camera {
+  color: orange;
+  border-radius: 10px;
+}

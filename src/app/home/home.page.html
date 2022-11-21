@@ -1,20 +1,76 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      QuickMed
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-content [fullscreen]="true" class="ion-padding">
+
+    <h1><strong>Bem vindo a sua agenda de consultas</strong></h1>
+
+    <ion-card>
+      <img alt="Silhouette of mountains" src="https://maisvivida.com.br/wp-content/uploads/2022/06/young-woman-using-phone-while-attending-online-class-1024x662.jpg" />
+        <ion-card-header>
+          <ion-card-title>Agende uma consulta</ion-card-title>
+          <ion-card-subtitle>Não deixe de cuidar da sua saude!</ion-card-subtitle>
+        </ion-card-header>
+    
+        <ion-card-content>
+          Com QuickMed, em apenas alguns cliques voce pode agendar uma consulta nova e receber todos os ddados necessarios!
+        </ion-card-content>
+
+        <ion-button class="card-botao" fill="clear">Agendar</ion-button>
+      </ion-card>
+
+    <h1 id="parceiros-titulo">Nossos parceiros:</h1>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col><img src="https://www.gndi.com.br/GNDI-Portal-theme/images/logoRoseta.png" alt="" class="parceiros-logo"></ion-col>
+        <ion-col><img src="https://logospng.org/download/amil/logo-amil-2048.png" alt="" class="parceiros-logo"></ion-col>
+        <ion-col><img src="https://logodownload.org/wp-content/uploads/2014/05/unimed-logo-1-2.png" alt="" class="parceiros-logo"></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-content>
+  
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+
+      <ion-tab-button tab="home" class="tab">
+        <ion-icon name="home-outline" class="icon-tab"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="appointment" class="tab">
+        <ion-icon name="bandage-outline" class="icon-tab"></ion-icon>
+        <ion-label>Consultas</ion-label>
+      </ion-tab-button>
+
+
+      <ion-tab-button tab="scaner" class="tab-camera">
+        <ion-icon name="camera-outline" id="camera"></ion-icon>
+        <ion-label>Scanear</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="about" class="tab">
+        <ion-icon name="alert-circle-outline"></ion-icon>
+        <ion-label>Sobre nos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="profile" class="tab">
+        <ion-icon name="person-outline" class="icon-tab"></ion-icon>
+        <ion-label>Perfil</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+
 </ion-content>
+
+

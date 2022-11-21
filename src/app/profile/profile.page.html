@@ -1,0 +1,86 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title routerLink="/home" >QuickMed</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <div id="container">
+
+
+
+    <ion-item class="input">
+
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" ngModel email [(ngModel)]="email"></ion-input>
+      <ion-button (click)="buscarUser(email)" color="none" shape="round">Buscar</ion-button>
+
+      <div class="user">
+        <ion-text>Nome</ion-text>
+        <ion-input [(ngModel)]="nome" class="user-info"></ion-input>
+        <ion-text>CPF</ion-text>
+        <ion-input [(ngModel)]="cpf" class="user-info"></ion-input>
+        <ion-text>Endereço</ion-text>
+        <ion-input [(ngModel)]="endereco" class="user-info"></ion-input>
+        <ion-button color="danger" (click)="deletarUser(id)">Deletar</ion-button>
+      </div>
+
+      <div>
+        <ion-button (click)="buscarConsulta(nome)" color="none" >Consultas agendadas</ion-button>
+      </div>
+
+      <div class="consultas">
+        <ion-list *ngFor="let consulta of consultas">
+          <ion-card>
+          <ion-card-header>
+            <ion-card-title>{{consulta.nome}}</ion-card-title>
+            <ion-card-subtitle><p>Especialide:</p>{{consulta.especialidade}}</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <p>Endereço:</p>{{consulta.endereco}}
+          </ion-card-content>
+        </ion-card>
+        </ion-list>
+      </div>
+
+    </ion-item>
+    
+  </div>
+
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+
+      <ion-tab-button tab="schedule" class="tab" routerLink="/home">
+        <ion-icon name="home-outline" class="icon-tab"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="appointment" class="tab" routerLink="/home/appointment">
+        <ion-icon name="bandage-outline" class="icon-tab"></ion-icon>
+        <ion-label>Consultas</ion-label>
+      </ion-tab-button>
+
+
+      <ion-tab-button tab="scaner" class="tab-camera" routerLink="/home/scaner">
+        <ion-icon name="camera-outline" id="camera"></ion-icon>
+        <ion-label>Scanear</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="about" class="tab" routerLink="/home/about">
+        <ion-icon name="alert-circle-outline"></ion-icon>
+        <ion-label>Sobre nos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="profile" class="tab" routerLink="/home/profile">
+        <ion-icon name="person-outline" class="icon-tab"></ion-icon>
+        <ion-label>Perfil</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>

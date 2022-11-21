@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>QuickMed</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button tab="schedule" class="tab" routerLink="/home">
+        <ion-icon name="home-outline" class="icon-tab"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="appointment" class="tab" routerLink="/home/appointment">
+        <ion-icon name="bandage-outline" class="icon-tab"></ion-icon>
+        <ion-label>Consultas</ion-label>
+      </ion-tab-button>
+
+
+      <ion-tab-button tab="scaner" class="tab-camera" routerLink="/home/scaner">
+        <ion-icon name="camera-outline" id="camera"></ion-icon>
+        <ion-label>Scanear</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="about" class="tab" routerLink="/home/about">
+        <ion-icon name="alert-circle-outline"></ion-icon>
+        <ion-label>Sobre nos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="profile" class="tab" routerLink="/home/profile">
+        <ion-icon name="person-outline" class="icon-tab"></ion-icon>
+        <ion-label>Perfil</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>

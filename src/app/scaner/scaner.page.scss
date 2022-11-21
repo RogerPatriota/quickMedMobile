@@ -1,0 +1,43 @@
+ion-header {
+    background-color: rgb(244, 242, 242);
+  }
+  
+  ion-toolbar {
+    --background: none;
+    background-color: orange !important;
+    height: 70px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  ion-title {
+    position: relative;
+    font-size: 35px;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  
+  ion-content {
+    --background: rgb(244, 242, 242);
+  }
+
+  ion-tab-bar {
+    background-color: orange;
+    font-size: 25px;
+  }
+  
+  .tab {
+    background-color: orange;
+    color: white;
+  }
+  
+  .tab-camera {
+    border-radius: 15px;
+  }
+  
+  
+  #camera {
+    color: orange;
+    border-radius: 10px;
+  }

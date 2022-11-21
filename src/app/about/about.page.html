@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      QuickMed
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://www.looper.com/img/gallery/the-most-memorable-nick-fury-quotes-in-the-mcu/intro-1646071443.webp" />
+    <ion-card-header>
+      <ion-card-title><i>There was an Idea..</i></ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Deixando as brincadeiras de lado.... O QuickMed nasceu de uma dor compartilhda por todos nós, as tecnologias avançam a cada segundo, mas muitos pontos acabam ficando esquecidos
+      A frustaçãod e voce ficar horas esperando seu atendimento, sem sebar quantas pessoas estão na sua frente é inadimicivel! <br>
+      Nos damos controle total a voce! Sinta-se livre para ir ao banheiro ou em alguma loja enquanto aguarda, sem medo de perder a sua consulta!
+    </ion-card-content>
+  </ion-card>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+
+      <ion-tab-button tab="schedule" class="tab" routerLink="/home">
+        <ion-icon name="home-outline" class="icon-tab"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="appointment" class="tab" routerLink="/home/appointment">
+        <ion-icon name="bandage-outline" class="icon-tab"></ion-icon>
+        <ion-label>Consultas</ion-label>
+      </ion-tab-button>
+
+
+      <ion-tab-button tab="scaner" class="tab-camera" routerLink="/home/scaner">
+        <ion-icon name="camera-outline" id="camera"></ion-icon>
+        <ion-label>Scanear</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="about" class="tab" routerLink="/home/about">
+        <ion-icon name="alert-circle-outline"></ion-icon>
+        <ion-label>Sobre nos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="profile" class="tab" routerLink="/home/profile">
+        <ion-icon name="person-outline" class="icon-tab"></ion-icon>
+        <ion-label>Perfil</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>
