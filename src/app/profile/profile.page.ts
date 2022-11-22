@@ -28,7 +28,7 @@ export class ProfilePage implements OnInit {
   public consultas: IConsulta[] = []
   public id!: number
   public nome!: string
-  public email: string = 'lucasmarques@gmail.com'
+  public email!: string
   public cpf!: string
   public endereco!: string
   public especialiade!: string
